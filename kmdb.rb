@@ -282,6 +282,7 @@ for movie in Warner_movie
     studio = Warner["name"]
 
     puts "#{title} #{year} #{rating} #{studio}"
+
 end 
  
 
@@ -314,10 +315,7 @@ puts ""
 # The Dark Knight Rises  Anne Hathaway         Selina Kyle
 
 roless = Role.all
-# # film = Movie.all
-# # tan= Role.where ({"movie_id" => film["id"]})
-
  for role in roless
-     puts "#{role["character_name"]}"
+    puts "#{Movie.find_by("id"=>role.movie_id)["title"]} #{Actor.find_by("id"=>role.actor_id)["name"]} #{role.character_name}"
  end
 
