@@ -88,6 +88,7 @@ new_Studio ["name"] = "Warner Bros."
 new_Studio.save
 
 Warner = Studio.find_by({"name" =>"Warner Bros."})
+
 new_Movie1 = Movie.new
 new_Movie1 ["title"] = "Batman Begins"
 new_Movie1 ["year_released"] = "2005"
